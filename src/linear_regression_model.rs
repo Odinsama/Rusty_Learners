@@ -1,5 +1,5 @@
 use crate::data::create_datasets::Datum;
-use crate::math_utils::dot;
+use crate::math::dot;
 
 fn predict(datum: &Datum, weights: &Vec<f64>) -> f64 {
     dot(&datum.features, &weights)
